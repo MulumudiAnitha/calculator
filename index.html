@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        body{
+            text-align: center;
+            background-image: url(cal.jpg);
+        }
+        .calculator table{
+            text-align: center;
+        }
+        button:hover{
+            color: blue;
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    <h2>CALCULATOR</h2>
+    <center>
+    <div class="calculator"></div>
+    <input type="text" id="result" readonly>
+    <table>
+        <tr>
+            <td><button onclick="appendnumber(7)">7</button></td>
+            <td><button onclick="appendnumber(8)">8</button></td>
+            <td><button onclick="appendnumber(9)">9</button></td>
+            <td><button onclick="SetOperator('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="appendnumber(4)">4</button></td>
+            <td><button onclick="appendnumber(5)">5</button></td>
+            <td><button onclick="appendnumber(6)">6</button></td>
+            <td><button onclick="SetOperator('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="appendnumber(1)">1</button></td>
+            <td><button onclick="appendnumber(2)">2</button></td>
+            <td><button onclick="appendnumber(3)">3</button></td>
+            <td><button onclick="SetOperator('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="appendnumber(0)">0</button></td>
+            <td><button onclick="clearResult('c')">c</button></td>
+            <td><button onclick="calculate('=')">=</button></td>
+            <td><button onclick="SetOperator('/')">/</button></td>
+        </tr>
+    </table>
+    </center>
+</div>
+<script src="cal.js"></script>
+</body>
+</html>
